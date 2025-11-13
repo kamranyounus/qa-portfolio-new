@@ -1,0 +1,502 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of a WordPress/WebFlow Developer and Digital Marketing Expert specializing in custom theme development, WooCommerce, and SEO optimization.">
+  <meta name="keywords" content="WordPress Developer, WebFlow, Digital Marketing, SEO, WooCommerce, Custom Themes">
+  <title>WordPress & WebFlow Developer Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; }
+    nav { position: sticky; top: 0; z-index: 20; }
+    .hero { background: linear-gradient(135deg, #3b82f6, #a855f7); }
+    .section { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .section.visible { opacity: 1; transform: translateY(0); }
+    .project-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .project-card:hover { transform: scale(1.03); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); }
+    .filter-btn { transition: background-color 0.3s ease, color 0.3s ease; }
+    .filter-btn.active { background-color: #7c3aed; color: white; }
+    .filter-btn:hover { background-color: #3b82f6; color: white; }
+    #back-to-top { position: fixed; bottom: 20px; right: 20px; display: none; z-index: 10; }
+    a:focus, button:focus { outline: 2px solid #3b82f6; outline-offset: 2px; }
+    @media (max-width: 640px) {
+      h1 { font-size: 2rem; }
+      .project-card { padding: 1rem; }
+      .filter-btn { font-size: 0.8rem; padding: 0.5rem 1rem; }
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <!-- Navigation -->
+  <nav class="bg-white shadow-lg p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold text-gray-800">Portfolio</a>
+      <div class="space-x-6">
+        <a href="#about" class="text-gray-600 hover:text-blue-600 transition">About</a>
+        <a href="#skills" class="text-gray-600 hover:text-blue-600 transition">Skills</a>
+        <a href="#portfolio" class="text-gray-600 hover:text-blue-600 transition">Portfolio</a>
+        <a href="#contact" class="text-gray-600 hover:text-blue-600 transition">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero text-white py-20">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">WordPress, Shopify, Hubspot, WebFlow Developer / SEO and Digital Marketing Specialist</h1>
+      <p class="text-lg md:text-xl mb-6 max-w-2xl mx-auto">
+        Crafting high-performing, visually stunning websites with WordPress, WebFlow, and SEO expertise to elevate your online presence.
+      </p>
+      <a href="#contact" class="inline-block px-8 py-3 bg-white text-blue-600 font-semibold rounded-lg shadow-md hover:bg-gray-100 transition">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-6 text-center">About Me</h2>
+      <p class="text-lg mb-4 max-w-3xl mx-auto">
+        I am a results-driven WordPress developer with extensive experience in custom theme development, WooCommerce customization, and SEO optimization. My expertise lies in creating high-performing, visually appealing, and fully functional WordPress websites tailored to various industries, including E-commerce, SaaS, Healthcare, Real Estate, Non-profits, Education, Retail, and more.
+      </p>
+      <p class="text-lg mb-4 max-w-3xl mx-auto">
+        In addition to WordPress development, I specialize in Digital Marketing and SEO, helping businesses increase their online presence through strategic marketing campaigns, on-page and technical SEO, and performance optimization. My goal is to deliver high-quality, conversion-focused websites that align with business objectives.
+      </p>
+      <p class="text-lg max-w-3xl mx-auto">
+        <strong>Why Work With Me?</strong> I ensure quality-driven solutions, maintain client-centric communication, deliver projects on time, and focus on business-oriented outcomes to help your business grow.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-6 text-center">Skills & Expertise</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-xl shadow-md">
+          <h3 class="text-xl font-semibold mb-2">WordPress Development</h3>
+          <p>Custom themes, WooCommerce, ACF, CPT, Multisite, API integrations.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md">
+          <h3 class="text-xl font-semibold mb-2">Front-End Development</h3>
+          <p>HTML, CSS, JavaScript, jQuery, responsive design, cross-browser compatibility.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md">
+          <h3 class="text-xl font-semibold mb-2">Back-End Development</h3>
+          <p>PHP, MySQL, database optimization, WordPress security.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md">
+          <h3 class="text-xl font-semibold mb-2">SEO & Digital Marketing</h3>
+          <p>On-page/technical SEO, Google Analytics, content marketing.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md">
+          <h3 class="text-xl font-semibold mb-2">Performance Optimization</h3>
+          <p>PageSpeed Insights, GTmetrix, WP Rocket, CDN integration.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md">
+          <h3 class="text-xl font-semibold mb-2">Tools & Project Management</h3>
+          <p>Figma, Adobe XD, Agile, client communication.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="section py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-6 text-center">Portfolio</h2>
+      <!-- Filter Buttons -->
+      <div class="mb-8 flex flex-wrap justify-center gap-4">
+        <h3 class="w-full text-xl font-semibold mb-2">Filter by Type:</h3>
+        <button class="filter-btn px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-blue-600 hover:text-white" data-filter="all">All</button>
+        <button class="filter-btn px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-blue-600 hover:text-white" data-filter="custom-wordpress">Custom WordPress</button>
+        <button class="filter-btn px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-blue-600 hover:text-white" data-filter="elementor">Elementor</button>
+        <button class="filter-btn px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-blue-600 hover:text-white" data-filter="divi">Divi Builder</button>
+        <button class="filter-btn px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-blue-600 hover:text-white" data-filter="wp-bakery">WP Bakery</button>
+        <button class="filter-btn px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-blue-600 hover:text-white" data-filter="learndash">LearnDash LMS</button>
+        <button class="filter-btn px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-blue-600 hover:text-white" data-filter="speed-optimization">Speed Optimization</button>
+        <button class="filter-btn px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-blue-600 hover:text-white" data-filter="multinetwork">Multinetwork</button>
+        <button class="filter-btn px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-blue-600 hover:text-white" data-filter="ecommerce">Ecommerce</button>
+        <button class="filter-btn px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-blue-600 hover:text-white" data-filter="blogging">Blogging & SEO</button>
+        <button class="filter-btn px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-blue-600 hover:text-white" data-filter="webflow">Webflow</button>
+        <button class="filter-btn px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-blue-600 hover:text-white" data-filter="shopify">Shopify</button>
+      </div>
+      <div class="mb-8 flex flex-wrap justify-center gap-4">
+        <h3 class="w-full text-xl font-semibold mb-2">Filter by Industry:</h3>
+        <button class="filter-btn px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-blue-600 hover:text-white" data-industry="all">All</button>
+        <button class="filter-btn px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-blue-600 hover:text-white" data-industry="e-commerce">E-commerce</button>
+        <button class="filter-btn px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-blue-600 hover:text-white" data-industry="healthcare">Healthcare</button>
+        <button class="filter-btn px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-blue-600 hover:text-white" data-industry="real-estate">Real Estate</button>
+        <button class="filter-btn px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-blue-600 hover:text-white" data-industry="non-profit">Non-profit</button>
+        <button class="filter-btn px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-blue-600 hover:text-white" data-industry="education">Education</button>
+        <button class="filter-btn px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-blue-600 hover:text-white" data-industry="retail">Retail</button>
+        <button class="filter-btn px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-blue-600 hover:text-white" data-industry="saas">SaaS</button>
+      </div>
+      <!-- Portfolio Cards -->
+      <div id="portfolio-list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Custom WordPress Theme Development -->
+        <div class="project-card bg-white p-6 rounded-xl shadow-md" data-types="custom-wordpress speed-optimization" data-industries="e-commerce healthcare real-estate saas retail">
+          <h3 class="text-xl font-semibold mb-2">Custom WordPress Theme Development</h3>
+          <p class="mb-2"><strong>About:</strong> Developed custom WordPress themes from Figma designs, fully code-based, with ACF, custom post types, speed optimization, and responsive design.</p>
+          <p class="mb-2"><strong>Websites:</strong></p>
+          <ul class="list-disc pl-5 text-sm">
+            <li><a href="https://okfbinsurance.com/" target="_blank" class="text-blue-600 hover:underline">okfbinsurance.com</a></li>
+            <li><a href="https://atlanta-ticket-lawyer.com/" target="_blank" class="text-blue-600 hover:underline">atlanta-ticket-lawyer.com</a></li>
+            <li><a href="https://uniquetaxi.ca/" target="_blank" class="text-blue-600 hover:underline">uniquetaxi.ca</a></li>
+            <li><a href="https://bigthinkcapital.com/" target="_blank" class="text-blue-600 hover:underline">bigthinkcapital.com</a></li>
+            <li><a href="https://agilehealthcare.ca/" target="_blank" class="text-blue-600 hover:underline">agilehealthcare.ca</a></li>
+            <li><a href="https://sapienceerp.com/" target="_blank" class="text-blue-600 hover:underline">sapienceerp.com</a></li>
+            <li><a href="https://www.storyelectrical.co.uk/" target="_blank" class="text-blue-600 hover:underline">storyelectrical.co.uk</a></li>
+            <li><a href="https://sylvaniaindianrestaurant.com/" target="_blank" class="text-blue-600 hover:underline">sylvaniaindianrestaurant.com</a></li>
+            <li><a href="https://sylvaniaindianrestaurant.com.au/" target="_blank" class="text-blue-600 hover:underline">sylvaniaindianrestaurant.com.au</a></li>
+            <li><a href="https://itechnologyaustralia.com.au/" target="_blank" class="text-blue-600 hover:underline">itechnologyaustralia.com.au</a></li>
+            <li><a href="https://asees.com.au/" target="_blank" class="text-blue-600 hover:underline">asees.com.au</a></li>
+            <li><a href="https://aseesindianrestaurant.com.au/" target="_blank" class="text-blue-600 hover:underline">aseesindianrestaurant.com.au</a></li>
+            <li><a href="https://nkdairyequipments.com/" target="_blank" class="text-blue-600 hover:underline">nkdairyequipments.com</a></li>
+            <li><a href="https://tallerpr.com/" target="_blank" class="text-blue-600 hover:underline">tallerpr.com</a></li>
+            <li><a href="https://www.xgrid.co/resources/" target="_blank" class="text-blue-600 hover:underline">xgrid.co/resources</a></li>
+            <li><a href="https://www.xgrid.co/b2b-digital-marketing-agency/" target="_blank" class="text-blue-600 hover:underline">xgrid.co/b2b-digital-marketing-agency</a></li>
+            <li><a href="https://www.xgrid.co/marketo-consulting-services/" target="_blank" class="text-blue-600 hover:underline">xgrid.co/marketo-consulting-services</a></li>
+            <li><a href="https://www.lotushomes.com/" target="_blank" class="text-blue-600 hover:underline">lotushomes.com</a></li>
+            <li><a href="https://www.glenfort.com/" target="_blank" class="text-blue-600 hover:underline">glenfort.com</a></li>
+            <li><a href="https://autozonecars.co.uk/" target="_blank" class="text-blue-600 hover:underline">autozonecars.co.uk</a></li>
+          </ul>
+        </div>
+        <!-- Elementor -->
+        <div class="project-card bg-white p-6 rounded-xl shadow-md" data-types="elementor multinetwork" data-industries="e-commerce healthcare retail non-profit education">
+          <h3 class="text-xl font-semibold mb-2">Elementor (Figma to WordPress)</h3>
+          <p class="mb-2"><strong>About:</strong> Built WordPress sites using Elementor, with ACF, custom post types, speed optimization, and responsive design. Includes multi-network and multi-lingual sites.</p>
+          <p class="mb-2"><strong>Websites:</strong></p>
+          <ul class="list-disc pl-5 text-sm">
+            <li><a href="https://rkfurniture.co.uk/" target="_blank" class="text-blue-600 hover:underline">rkfurniture.co.uk</a></li>
+            <li><a href="https://8s.money/" target="_blank" class="text-blue-600 hover:underline">8s.money</a></li>
+            <li><a href="https://rkfurnitures.co.uk/" target="_blank" class="text-blue-600 hover:underline">rkfurnitures.co.uk</a></li>
+            <li><a href="https://salonkokoro.ca/" target="_blank" class="text-blue-600 hover:underline">salonkokoro.ca</a></li>
+            <li><a href="https://www.volter.pt/" target="_blank" class="text-blue-600 hover:underline">volter.pt</a></li>
+            <li><a href="http://360restaurantmarketing.agency/" target="_blank" class="text-blue-600 hover:underline">360restaurantmarketing.agency</a></li>
+            <li><a href="https://australianconceptfertility.com/" target="_blank" class="text-blue-600 hover:underline">australianconceptfertility.com</a></li>
+            <li><a href="https://bonfirerestaurant.com.au/" target="_blank" class="text-blue-600 hover:underline">bonfirerestaurant.com.au</a></li>
+            <li><a href="https://medwest.com.au/" target="_blank" class="text-blue-600 hover:underline">medwest.com.au</a></li>
+            <li><a href="https://universalmotors.com.au/" target="_blank" class="text-blue-600 hover:underline">universalmotors.com.au</a></li>
+            <li><a href="https://gisbornefoodandwineco.com.au/" target="_blank" class="text-blue-600 hover:underline">gisbornefoodandwineco.com.au</a></li>
+            <li><a href="https://naturalwoodfloors.com.au/" target="_blank" class="text-blue-600 hover:underline">naturalwoodfloors.com.au</a></li>
+            <li><a href="https://dhallofflames.com.au/" target="_blank" class="text-blue-600 hover:underline">dhallofflames.com.au</a></li>
+            <li><a href="https://centersforafghansupport.org/" target="_blank" class="text-blue-600 hover:underline">centersforafghansupport.org</a> (Multi-network, Multi-lingual)</li>
+            <li><a href="https://gibbonstaxi.ca/" target="_blank" class="text-blue-600 hover:underline">gibbonstaxi.ca</a></li>
+            <li><a href="https://arpeggiosmusicfactory.com/" target="_blank" class="text-blue-600 hover:underline">arpeggiosmusicfactory.com</a></li>
+            <li><a href="https://kaliaeyeandmaternityhospital.com/" target="_blank" class="text-blue-600 hover:underline">kaliaeyeandmaternityhospital.com</a></li>
+            <li><a href="https://sofatinfertility.co.in/" target="_blank" class="text-blue-600 hover:underline">sofatinfertility.co.in</a></li>
+          </ul>
+        </div>
+        <!-- Divi Builder -->
+        <div class="project-card bg-white p-6 rounded-xl shadow-md" data-types="divi" data-industries="real-estate non-profit retail">
+          <h3 class="text-xl font-semibold mb-2">Divi Builder (Figma to WordPress)</h3>
+          <p class="mb-2"><strong>About:</strong> Converted Figma designs to WordPress using Divi Builder, with custom modules, global styles, responsive design, and optimized performance.</p>
+          <p class="mb-2"><strong>Websites:</strong></p>
+          <ul class="list-disc pl-5 text-sm">
+            <li><a href="https://showmysite.com.au/ausrenew/" target="_blank" class="text-blue-600 hover:underline">showmysite.com.au/ausrenew</a></li>
+            <li><a href="https://www.showmysite.com.au/aricon/" target="_blank" class="text-blue-600 hover:underline">showmysite.com.au/aricon</a></li>
+            <li><a href="https://missdaisypm.com.au/" target="_blank" class="text-blue-600 hover:underline">missdaisypm.com.au</a></li>
+            <li><a href="https://tetihi.com/" target="_blank" class="text-blue-600 hover:underline">tetihi.com</a></li>
+            <li><a href="http://showmysite.com.au/upsideave/" target="_blank" class="text-blue-600 hover:underline">showmysite.com.au/upsideave</a></li>
+            <li><a href="https://nextra.com.au/" target="_blank" class="text-blue-600 hover:underline">nextra.com.au</a></li>
+            <li><a href="https://aaamarkhamtaxi.ca/" target="_blank" class="text-blue-600 hover:underline">aaamarkhamtaxi.ca</a></li>
+            <li><a href="https://ausfloorworks.com.au/" target="_blank" class="text-blue-600 hover:underline">ausfloorworks.com.au</a></li>
+            <li><a href="https://www.alkira.com/" target="_blank" class="text-blue-600 hover:underline">alkira.com</a></li>
+            <li><a href="https://alicelwaltonfoundation.org/" target="_blank" class="text-blue-600 hover:underline">alicelwaltonfoundation.org</a></li>
+            <li><a href="https://www.cashmyhome.com/" target="_blank" class="text-blue-600 hover:underline">cashmyhome.com</a></li>
+            <li><a href="https://cashmyhome.co.uk/" target="_blank" class="text-blue-600 hover:underline">cashmyhome.co.uk</a></li>
+            <li><a href="https://www.alzheimersresearchuk.org/" target="_blank" class="text-blue-600 hover:underline">alzheimersresearchuk.org</a></li>
+          </ul>
+        </div>
+        <!-- WP Bakery Builder -->
+        <div class="project-card bg-white p-6 rounded-xl shadow-md" data-types="wp-bakery" data-industries="education">
+          <h3 class="text-xl font-semibold mb-2">WP Bakery Builder (Figma to WordPress)</h3>
+          <p class="mb-2"><strong>About:</strong> Converted Figma designs to WordPress using WPBakery Builder, with custom elements, global styles, responsive design, and optimized performance.</p>
+          <p class="mb-2"><strong>Websites:</strong></p>
+          <ul class="list-disc pl-5 text-sm">
+            <li><a href="https://badgeos.org/" target="_blank" class="text-blue-600 hover:underline">badgeos.org</a></li>
+            <li><a href="https://www.homepest.net/" target="_blank" class="text-blue-600 hover:underline">homepest.net</a></li>
+          </ul>
+        </div>
+        <!-- LearnDash LMS -->
+        <div class="project-card bg-white p-6 rounded-xl shadow-md" data-types="learndash" data-industries="education">
+          <h3 class="text-xl font-semibold mb-2">LearnDash LMS</h3>
+          <p class="mb-2"><strong>About:</strong> Built a WordPress LMS using WPBakery and LearnDash, with custom course layouts, quizzes, certifications, and performance optimization.</p>
+          <p class="mb-2"><strong>Website:</strong></p>
+          <ul class="list-disc pl-5 text-sm">
+            <li><a href="https://uxcontent.com/" target="_blank" class="text-blue-600 hover:underline">uxcontent.com</a></li>
+          </ul>
+        </div>
+        <!-- WordPress Website Speed Optimization -->
+        <div class="project-card bg-white p-6 rounded-xl shadow-md" data-types="speed-optimization" data-industries="e-commerce healthcare real-estate saas retail">
+          <h3 class="text-xl font-semibold mb-2">WordPress Website Speed Optimization</h3>
+          <p class="mb-2"><strong>About:</strong> Enhanced page speed and Core Web Vitals through caching, CDN integration, database optimization, and LMS integration.</p>
+          <p class="mb-2"><strong>Websites:</strong></p>
+          <ul class="list-disc pl-5 text-sm">
+            <li><a href="https://okfbinsurance.com/" target="_blank" class="text-blue-600 hover:underline">okfbinsurance.com</a></li>
+            <li><a href="https://atlanta-ticket-lawyer.com/" target="_blank" class="text-blue-600 hover:underline">atlanta-ticket-lawyer.com</a></li>
+            <li><a href="https://uniquetaxi.ca/" target="_blank" class="text-blue-600 hover:underline">uniquetaxi.ca</a></li>
+            <li><a href="https://bigthinkcapital.com/" target="_blank" class="text-blue-600 hover:underline">bigthinkcapital.com</a></li>
+            <li><a href="https://agilehealthcare.ca/" target="_blank" class="text-blue-600 hover:underline">agilehealthcare.ca</a></li>
+            <li><a href="https://sapienceerp.com/" target="_blank" class="text-blue-600 hover:underline">sapienceerp.com</a></li>
+            <li><a href="https://www.storyelectrical.co.uk/" target="_blank" class="text-blue-600 hover:underline">storyelectrical.co.uk</a></li>
+            <li><a href="https://sylvaniaindianrestaurant.com/" target="_blank" class="text-blue-600 hover:underline">sylvaniaindianrestaurant.com</a></li>
+            <li><a href="https://sylvaniaindianrestaurant.com.au/" target="_blank" class="text-blue-600 hover:underline">sylvaniaindianrestaurant.com.au</a></li>
+            <li><a href="https://itechnologyaustralia.com.au/" target="_blank" class="text-blue-600 hover:underline">itechnologyaustralia.com.au</a></li>
+            <li><a href="https://asees.com.au/" target="_blank" class="text-blue-600 hover:underline">asees.com.au</a></li>
+            <li><a href="https://aseesindianrestaurant.com.au/" target="_blank" class="text-blue-600 hover:underline">aseesindianrestaurant.com.au</a></li>
+            <li><a href="https://nkdairyequipments.com/" target="_blank" class="text-blue-600 hover:underline">nkdairyequipments.com</a></li>
+            <li><a href="https://tallerpr.com/" target="_blank" class="text-blue-600 hover:underline">tallerpr.com</a></li>
+            <li><a href="https://www.xgrid.co/resources/" target="_blank" class="text-blue-600 hover:underline">xgrid.co/resources</a></li>
+            <li><a href="https://www.xgrid.co/b2b-digital-marketing-agency/" target="_blank" class="text-blue-600 hover:underline">xgrid.co/b2b-digital-marketing-agency</a></li>
+            <li><a href="https://www.xgrid.co/marketo-consulting-services/" target="_blank" class="text-blue-600 hover:underline">xgrid.co/marketo-consulting-services</a></li>
+            <li><a href="https://salonkokoro.ca/" target="_blank" class="text-blue-600 hover:underline">salonkokoro.ca</a></li>
+            <li><a href="https://www.volter.pt/" target="_blank" class="text-blue-600 hover:underline">volter.pt</a></li>
+            <li><a href="http://360restaurantmarketing.agency/" target="_blank" class="text-blue-600 hover:underline">360restaurantmarketing.agency</a></li>
+            <li><a href="https://australianconceptfertility.com/" target="_blank" class="text-blue-600 hover:underline">australianconceptfertility.com</a></li>
+            <li><a href="https://bonfirerestaurant.com.au/" target="_blank" class="text-blue-600 hover:underline">bonfirerestaurant.com.au</a></li>
+            <li><a href="https://badgeos.org/" target="_blank" class="text-blue-600 hover:underline">badgeos.org</a></li>
+            <li><a href="https://www.homepest.net/" target="_blank" class="text-blue-600 hover:underline">homepest.net</a></li>
+            <li><a href="https://www.lotushomes.com/" target="_blank" class="text-blue-600 hover:underline">lotushomes.com</a></li>
+            <li><a href="https://www.glenfort.com/" target="_blank" class="text-blue-600 hover:underline">glenfort.com</a></li>
+            <li><a href="https://autozonecars.co.uk/" target="_blank" class="text-blue-600 hover:underline">autozonecars.co.uk</a></li>
+          </ul>
+        </div>
+        <!-- WordPress Multinetwork Site -->
+        <div class="project-card bg-white p-6 rounded-xl shadow-md" data-types="multinetwork" data-industries="non-profit">
+          <h3 class="text-xl font-semibold mb-2">WordPress Multinetwork Site</h3>
+          <p class="mb-2"><strong>About:</strong> Converted Figma designs to a WordPress multinetwork site with custom functions, shortcodes, pixel-perfect layout, and optimized performance.</p>
+          <p class="mb-2"><strong>Website:</strong></p>
+          <ul class="list-disc pl-5 text-sm">
+            <li><a href="https://centersforafghansupport.org/" target="_blank" class="text-blue-600 hover:underline">centersforafghansupport.org</a></li>
+          </ul>
+        </div>
+        <!-- WordPress Ecommerce Site -->
+        <div class="project-card bg-white p-6 rounded-xl shadow-md" data-types="ecommerce" data-industries="e-commerce">
+          <h3 class="text-xl font-semibold mb-2">WordPress Ecommerce Site</h3>
+          <p class="mb-2"><strong>About:</strong> Built WooCommerce sites with secure payment gateways, custom product pages, advanced filters, and optimized performance.</p>
+          <p class="mb-2"><strong>Websites:</strong></p>
+          <ul class="list-disc pl-5 text-sm">
+            <li><a href="https://rkfurnitures.co.uk/" target="_blank" class="text-blue-600 hover:underline">rkfurnitures.co.uk</a></li>
+            <li><a href="https://rkfurniture.co.uk/" target="_blank" class="text-blue-600 hover:underline">rkfurniture.co.uk</a></li>
+          </ul>
+        </div>
+        <!-- WordPress Blogging & SEO -->
+        <div class="project-card bg-white p-6 rounded-xl shadow-md" data-types="blogging" data-industries="e-commerce real-estate education retail">
+          <h3 class="text-xl font-semibold mb-2">WordPress Blogging & SEO</h3>
+          <p class="mb-2"><strong>About:</strong> Developed and optimized WordPress blogs with SEO, Google Analytics, GTM, and Search Console integration for enhanced search visibility and user engagement.</p>
+          <p class="mb-2"><strong>Websites:</strong></p>
+          <ul class="list-disc pl-5 text-sm">
+            <li><a href="https://www.lotushomes.com/" target="_blank" class="text-blue-600 hover:underline">lotushomes.com</a></li>
+            <li><a href="https://www.glenfort.com/" target="_blank" class="text-blue-600 hover:underline">glenfort.com</a></li>
+            <li><a href="https://autozonecars.co.uk/" target="_blank" class="text-blue-600 hover:underline">autozonecars.co.uk</a></li>
+            <li><a href="https://hoverboardsguide.com/" target="_blank" class="text-blue-600 hover:underline">hoverboardsguide.com</a></li>
+            <li><a href="https://bestchevronstuff.com/" target="_blank" class="text-blue-600 hover:underline">bestchevronstuff.com</a></li>
+            <li><a href="https://clevelandsentinel.com/" target="_blank" class="text-blue-600 hover:underline">clevelandsentinel.com</a></li>
+            <li><a href="https://www.fashionpakistani.com/" target="_blank" class="text-blue-600 hover:underline">fashionpakistani.com</a></li>
+            <li><a href="https://freebiesforacause.com/" target="_blank" class="text-blue-600 hover:underline">freebiesforacause.com</a></li>
+            <li><a href="https://fun-or-junk.com/" target="_blank" class="text-blue-600 hover:underline">fun-or-junk.com</a></li>
+            <li><a href="https://happyprogrammingguide.com/" target="_blank" class="text-blue-600 hover:underline">happyprogrammingguide.com</a></li>
+            <li><a href="https://hikingcare.com/" target="_blank" class="text-blue-600 hover:underline">hikingcare.com</a></li>
+            <li><a href="https://politicspk.com/" target="_blank" class="text-blue-600 hover:underline">politicspk.com</a></li>
+            <li><a href="http://babyswingclub.com/" target="_blank" class="text-blue-600 hover:underline">babyswingclub.com</a></li>
+            <li><a href="https://electriccigarettemachines.com/" target="_blank" class="text-blue-600 hover:underline">electriccigarettemachines.com</a></li>
+            <li><a href="https://bestmugsguide.com/" target="_blank" class="text-blue-600 hover:underline">bestmugsguide.com</a></li>
+            <li><a href="https://remotecontrolcarsblog.com/" target="_blank" class="text-blue-600 hover:underline">remotecontrolcarsblog.com</a></li>
+            <li><a href="https://burrgrinderguide.com/" target="_blank" class="text-blue-600 hover:underline">burrgrinderguide.com</a></li>
+            <li><a href="https://detailsanderguide.com/" target="_blank" class="text-blue-600 hover:underline">detailsanderguide.com</a></li>
+            <li><a href="https://drugsgeek.com/" target="_blank" class="text-blue-600 hover:underline">drugsgeek.com</a></li>
+            <li><a href="https://ergonomicbabycarrier.com/" target="_blank" class="text-blue-600 hover:underline">ergonomicbabycarrier.com</a></li>
+            <li><a href="https://gadgetscomparisons.com/" target="_blank" class="text-blue-600 hover:underline">gadgetscomparisons.com</a></li>
+            <li><a href="https://indoorplantshome.com/" target="_blank" class="text-blue-600 hover:underline">indoorplantshome.com</a></li>
+            <li><a href="https://kitchenfaucetguides.com/" target="_blank" class="text-blue-600 hover:underline">kitchenfaucetguides.com</a></li>
+            <li><a href="https://navymentor.org/" target="_blank" class="text-blue-600 hover:underline">navymentor.org</a></li>
+            <li><a href="https://pondpumpsadviser.com/" target="_blank" class="text-blue-600 hover:underline">pondpumpsadviser.com</a></li>
+            <li><a href="https://welderguru.com/" target="_blank" class="text-blue-600 hover:underline">welderguru.com</a></li>
+            <li><a href="https://travelwithplan.com/" target="_blank" class="text-blue-600 hover
+
+:underline">travelwithplan.com</a></li>
+            <li><a href="https://www.waytoskinny.com/" target="_blank" class="text-blue-600 hover:underline">waytoskinny.com</a></li>
+            <li><a href="https://softwaretestingandistqb.com/" target="_blank" class="text-blue-600 hover:underline">softwaretestingandistqb.com</a></li>
+            <li><a href="https://ledlightreviews.org/" target="_blank" class="text-blue-600 hover:underline">ledlightreviews.org</a></li>
+            <li><a href="https://futuresoft.pk/" target="_blank" class="text-blue-600 hover:underline">futuresoft.pk</a></li>
+            <li><a href="https://destinationrogue.com/" target="_blank" class="text-blue-600 hover:underline">destinationrogue.com</a></li>
+            <li><a href="https://urdubiography.com/" target="_blank" class="text-blue-600 hover:underline">urdubiography.com</a></li>
+            <li><a href="https://ratterrieradvice.com/" target="_blank" class="text-blue-600 hover:underline">ratterrieradvice.com</a></li>
+            <li><a href="https://adostuntcars2.com/" target="_blank" class="text-blue-600 hover:underline">adostuntcars2.com</a></li>
+            <li><a href="https://southreport.com/" target="_blank" class="text-blue-600 hover:underline">southreport.com</a></li>
+            <li><a href="https://www.adivastateofmind.com/" target="_blank" class="text-blue-600 hover:underline">adivastateofmind.com</a></li>
+            <li><a href="https://kneepadsguide.com/" target="_blank" class="text-blue-600 hover:underline">kneepadsguide.com</a></li>
+            <li><a href="https://mcsol.com.pk/" target="_blank" class="text-blue-600 hover:underline">mcsol.com.pk</a></li>
+            <li><a href="https://mysugargliders.com/" target="_blank" class="text-blue-600 hover:underline">mysugargliders.com</a></li>
+            <li><a href="https://besthybridbikeguide.net/" target="_blank" class="text-blue-600 hover:underline">besthybridbikeguide.net</a></li>
+            <li><a href="https://germanshepherdplace.com/" target="_blank" class="text-blue-600 hover:underline">germanshepherdplace.com</a></li>
+            <li><a href="https://wowcream.com/" target="_blank" class="text-blue-600 hover:underline">wowcream.com</a></li>
+            <li><a href="https://prowoodbats.com/" target="_blank" class="text-blue-600 hover:underline">prowoodbats.com</a></li>
+            <li><a href="https://yourpethamster.com/" target="_blank" class="text-blue-600 hover:underline">yourpethamster.com</a></li>
+            <li><a href="https://longboardhub.com/" target="_blank" class="text-blue-600 hover:underline">longboardhub.com</a></li>
+            <li><a href="https://redmillhauntedvillage.org/" target="_blank" class="text-blue-600 hover:underline">redmillhauntedvillage.org</a></li>
+            <li><a href="https://footballkickingtees.com/" target="_blank" class="text-blue-600 hover:underline">footballkickingtees.com</a></li>
+            <li><a href="https://grsale.outletstore2023.ru/" target="_blank" class="text-blue-600 hover:underline">grsale.outletstore2023.ru</a></li>
+            <li><a href="https://clashservers.org/" target="_blank" class="text-blue-600 hover:underline">clashservers.org</a></li>
+ MIMI            <li><a href="https://glutenfreefarina.com/" target="_blank" class="text-blue-600 hover:underline">glutenfreefarina.com</a></li>
+            <li><a href="https://kitchenwithmommy.com/" target="_blank" class="text-blue-600 hover:underline">kitchenwithmommy.com</a></li>
+            <li><a href="https://coconutoilreview.com/" target="_blank" class="text-blue-600 hover:underline">coconutoilreview.com</a></li>
+            <li><a href="https://bestreloadingpress.net/" target="_blank" class="text-blue-600 hover:underline">bestreloadingpress.net</a></li>
+            <li><a href="https://heatedcatbedreview.com/" target="_blank" class="text-blue-600 hover:underline">heatedcatbedreview.com</a></li>
+            <li><a href="https://homehealthylifestyle.com/" target="_blank" class="text-blue-600 hover:underline">homehealthylifestyle.com</a></li>
+            <li><a href="https://windowscage.com/" target="_blank" class="text-blue-600 hover:underline">windowscage.com</a></li>
+            <li><a href="https://carmen-electra.net/" target="_blank" class="text-blue-600 hover:underline">carmen-electra.net</a></li>
+            <li><a href="https://kindred-kitchen.com/" target="_blank" class="text-blue-600 hover:underline">kindred-kitchen.com</a></li>
+            <li><a href="https://doggiebowwowblog.com/" target="_blank" class="text-blue-600 hover:underline">doggiebowwowblog.com</a></li>
+            <li><a href="https://wordlap.com/" target="_blank" class="text-blue-600 hover:underline">wordlap.com</a></li>
+            <li><a href="https://thespeciallybaked.com/" target="_blank" class="text-blue-600 hover:underline">thespeciallybaked.com</a></li>
+            <li><a href="https://deer-hunting-success.com/" target="_blank" class="text-blue-600 hover:underline">deer-hunting-success.com</a></li>
+            <li><a href="https://asideofketchup.com/" target="_blank" class="text-blue-600 hover:underline">asideofketchup.com</a></li>
+            <li><a href="https://crossbowlife.com/" target="_blank" class="text-blue-600 hover:underline">crossbowlife.com</a></li>
+            <li><a href="https://dog-bicycle-trailer.com/" target="_blank" class="text-blue-600 hover:underline">dog-bicycle-trailer.com</a></li>
+            <li><a href="https://bedbugdetected.com/" target="_blank" class="text-blue-600 hover:underline">bedbugdetected.com</a></li>
+            <li><a href="https://sweetbasilthyme.com/" target="_blank" class="text-blue-600 hover:underline">sweetbasilthyme.com</a></li>
+            <li><a href="https://massagehub.org/" target="_blank" class="text-blue-600 hover:underline">massagehub.org</a></li>
+            <li><a href="https://affordablevideoprojector.com/" target="_blank" class="text-blue-600 hover:underline">affordablevideoprojector.com</a></li>
+            <li><a href="https://bestbinocularforhunting.com/" target="_blank" class="text-blue-600 hover:underline">bestbinocularforhunting.com</a></li>
+            <li><a href="https://bestchildrenwagons.com/" target="_blank" class="text-blue-600 hover:underline">bestchildrenwagons.com</a></li>
+            <li><a href="https://chooseanewlaptop.com/" target="_blank" class="text-blue-600 hover:underline">chooseanewlaptop.com</a></li>
+            <li><a href="https://asiandogsbreed.com/" target="_blank" class="text-blue-600 hover:underline">asiandogsbreed.com</a></li>
+            <li><a href="https://funtasticecards.com/" target="_blank" class="text-blue-600 hover:underline">funtasticecards.com</a></li>
+            <li><a href="https://bestportablegeneratorguide.com/" target="_blank" class="text-blue-600 hover:underline">bestportablegeneratorguide.com</a></li>
+            <li><a href="https://bestelectricsmoker.net/" target="_blank" class="text-blue-600 hover:underline">bestelectricsmoker.net</a></li>
+            <li><a href="https://articleshelper.com/" target="_blank" class="text-blue-600 hover:underline">articleshelper.com</a></li>
+            <li><a href="https://tower-speakers.com/" target="_blank" class="text-blue-600 hover:underline">tower-speakers.com</a></li>
+            <li><a href="https://handicaptoiletguide.com/" target="_blank" class="text-blue-600 hover:underline">handicaptoiletguide.com</a></li>
+            <li><a href="https://archerygearjunkie.com/" target="_blank" class="text-blue-600 hover:underline">archerygearjunkie.com</a></li>
+            <li><a href="https://thermometerguru.com/" target="_blank" class="text-blue-600 hover:underline">thermometerguru.com</a></li>
+            <li><a href="https://gas-and-diesel-engine-equipment-guide.com/" target="_blank" class="text-blue-600 hover:underline">gas-and-diesel-engine-equipment-guide.com</a></li>
+            <li><a href="https://mediacom.com.pk/" target="_blank" class="text-blue-600 hover:underline">mediacom.com.pk</a></li>
+            <li><a href="https://protablesawreviews.com/" target="_blank" class="text-blue-600 hover:underline">protablesawreviews.com</a></li>
+            <li><a href="https://thewatcheslounge.com/" target="_blank" class="text-blue-600 hover:underline">thewatcheslounge.com</a></li>
+            <li><a href="https://travel-oahu-local-style.com/" target="_blank" class="text-blue-600 hover:underline">travel-oahu-local-style.com</a></li>
+            <li><a href="https://thevacuumsealerexpert.com/" target="_blank" class="text-blue-600 hover:underline">thevacuumsealerexpert.com</a></li>
+            <li><a href="https://smarttoiletseatreview.com/" target="_blank" class="text-blue-600 hover:underline">smarttoiletseatreview.com</a></li>
+            <li><a href="https://thegadgetspro.com/" target="_blank" class="text-blue-600 hover:underline">thegadgetspro.com</a></li>
+            <li><a href="https://bestmassage-chair.com/" target="_blank" class="text-blue-600 hover:underline">bestmassage-chair.com</a></li>
+            <li><a href="https://heatpumpreviewssite.com/" target="_blank" class="text-blue-600 hover:underline">heatpumpreviewssite.com</a></li>
+            <li><a href="https://fullfacesnorkelmaskreviews.com/" target="_blank" class="text-blue-600 hover:underline">fullfacesnorkelmaskreviews.com</a></li>
+            <li><a href="https://bestladdersreview.com/" target="_blank" class="text-blue-600 hover:underline">bestladdersreview.com</a></li>
+            <li><a href="https://snowboardtravelguide.com/" target="_blank" class="text-blue-600 hover:underline">snowboardtravelguide.com</a></li>
+            <li><a href="https://negative-reviews.com/" target="_blank" class="text-blue-600 hover:underline">negative-reviews.com</a></li>
+            <li><a href="https://livinghealthymom.com/" target="_blank" class="text-blue-600 hover:underline">livinghealthymom.com</a></li>
+            <li><a href="https://lastdayearth.com/" target="_blank" class="text-blue-600 hover:underline">lastdayearth.com</a></li>
+            <li><a href="https://snakebootguide.com/" target="_blank" class="text-blue-600 hover:underline">snakebootguide.com</a></li>
+            <li><a href="https://rawread.com/" target="_blank" class="text-blue-600 hover:underline">rawread.com</a></li>
+            <li><a href="https://polyfreeplanet.com/" target="_blank" class="text-blue-600 hover:underline">polyfreeplanet.com</a></li>
+            <li><a href="https://lacrosseware.com/" target="_blank" class="text-blue-600 hover:underline">lacrosseware.com</a></li>
+            <li><a href="https://spicerykitchen.com/" target="_blank" class="text-blue-600 hover:underline">spicerykitchen.com</a></li>
+            <li><a href="https://outfitthekitchen.com/" target="_blank" class="text-blue-600 hover:underline">outfitthekitchen.com</a></li>
+            <li><a href="https://thewatchtrends.com/" target="_blank" class="text-blue-600 hover:underline">thewatchtrends.com</a></li>
+            <li><a href="https://dragonvaleworldguide.com/" target="_blank" class="text-blue-600 hover:underline">dragonvaleworldguide.com</a></li>
+            <li><a href="https://percussiondream.com/" target="_blank" class="text-blue-600 hover:underline">percussiondream.com</a></li>
+            <li><a href="https://thecalorieninja.com/" target="_blank" class="text-blue-600 hover:underline">thecalorieninja.com</a></li>
+            <li><a href="https://ghsolutionsinc.com/" target="_blank" class="text-blue-600 hover:underline">ghsolutionsinc.com</a></li>
+          </ul>
+        </div>
+        <!-- Webflow Project -->
+        <div class="project-card bg-white p-6 rounded-xl shadow-md" data-types="webflow" data-industries="saas">
+          <h3 class="text-xl font-semibold mb-2">Webflow Project</h3>
+          <p class="mb-2"><strong>About:</strong> Designed and developed responsive Webflow websites with custom interactions, CMS collections, and SEO optimization.</p>
+          <p class="mb-2"><strong>Websites:</strong></p>
+          <ul class="list-disc pl-5 text-sm">
+            <li><a href="https://thedunay.com/" target="_blank" class="text-blue-600 hover:underline">thedunay.com</a></li>
+            <li><a href="https://chkk.io/" target="_blank" class="text-blue-600 hover:underline">chkk.io</a></li>
+            <li><a href="https://www.microagility.com/" target="_blank" class="text-blue-600 hover:underline">microagility.com</a></li>
+          </ul>
+        </div>
+        <!-- Shopify Project -->
+        <div class="project-card bg-white p-6 rounded-xl shadow-md" data-types="shopify" data-industries="e-commerce">
+          <h3 class="text-xl font-semibold mb-2">Shopify Project</h3>
+          <p class="mb-2"><strong>About:</strong> Developed a custom Shopify store with responsive design, custom themes, third-party apps, and SEO optimization.</p>
+          <p class="mb-2"><strong>Website:</strong></p>
+          <ul class="list-disc pl-5 text-sm">
+            <li><a href="https://magnet-innov.com/" target="_blank" class="text-blue-600 hover:underline">magnet-innov.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section py-16 bg-gray-100">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-6">Get in Touch</h2>
+      <p class="text-lg mb-6 max-w-2xl mx-auto">Looking to elevate your online presence with a high-performing website? Let’s collaborate!</p>
+      <a href="mailto:your.email@example.com" class="inline-block px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition">Contact Me</a>
+    </div>
+  </section>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="bg-blue-600 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-700 transition">Back to Top</button>
+
+  <script>
+    // Filter Portfolio Items
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Handle Type Filters
+        if (button.dataset.filter) {
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+          button.classList.add('active');
+          const filter = button.dataset.filter;
+          projectCards.forEach(card => {
+            const types = card.dataset.types.split(' ');
+            if (filter === 'all' || types.includes(filter)) {
+              card.style.display = 'block';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        }
+        // Handle Industry Filters
+        if (button.dataset.industry) {
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+          button.classList.add('active');
+          const industry = button.dataset.industry;
+          projectCards.forEach(card => {
+            const industries = card.dataset.industries.split(' ');
+            if (industry === 'all' || industries.includes(industry)) {
+              card.style.display = 'block';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        }
+      });
+    });
+
+    // Back to Top Button
+    const backToTopButton = document.getElementById('back-to-top');
+    window.addEventListener('scroll', () => {
+      backToTopButton.style.display = window.scrollY > 300 ? 'block' : 'none';
+    });
+    backToTopButton.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Section Fade-In Animation
+    const sections = document.querySelectorAll('.section');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    sections.forEach(section => observer.observe(section));
+  </script>
+</body>
+</html>
